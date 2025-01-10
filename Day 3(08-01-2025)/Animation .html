@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(grey);
+            color: #fff;
+        }
+        .glow {
+            background-color: darkorange;
+            background: linear-gradient(255, 118, 135, 0.7);
+            border: whitesmoke;
+            font-size: medium;
+            cursor: pointer;
+            border-radius: 15px;
+            outline: darkorange;
+            transition: 0.5s ease, box-shadow 0.7s ease;
+            position: relative;
+        }
+        .glow:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 4px 8px grey;
+        }
+        .glow:active {
+            transform: translateY(3px);
+            box-shadow: 0 4px 8px darkkhaki;
+        }
+        .glow-clicked {
+            background-color: lime;
+            background: linear-gradient(255, 118, 135, 0.7);
+        }
+    </style>
+    <script>
+        function changeColor() {
+            const button = document.querySelector('.glow');
+            button.classList.toggle('glow-clicked');
+        }
+    </script>
+</head>
+<body>
+    <button class="glow" onclick="changeColor()">Click Here</button>
+</body>
+</html>

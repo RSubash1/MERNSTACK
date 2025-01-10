@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Weather Application</h1>
+        <button id="getclick"> Check Weather</button> 
+        <p id="temp">To know the weather update</p>
+        <script>
+            id=''
+            temp=document.getElementById('temp');
+            CheckWeather=document.getElementById('getclick');
+            checkWeather.addEventListener('click',()=>{
+                if('geo' in navigatior){
+                    navigator.geolocation.getCurrentPosition((position)=>{
+                        lattitude,longitude=position.coords;
+
+                        localstorage.setItem('latitude',latitude);
+                        localstorage.setItem('longitude',longitude);
+                        url='https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=37.7881&lon=-18.7646&zoom=5'
+                        fetch(url).then(Respose => Respose.json)
+
+                    })
+
+            }
+        </script>
+    </body>
+</html>
