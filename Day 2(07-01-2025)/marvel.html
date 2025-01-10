@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Image with Transitions</title>
+    <style>
+        /* Style for the container div */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Style for header div */
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Change header background and text color on hover */
+        .header:hover {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+
+        /* Style for content div */
+        .content {
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Style for footer div */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Change footer background color on hover */
+        .footer:hover {
+            background-color: #444;
+        }
+
+        /* Image style with transition effect */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px; /* Add some spacing above the image */
+        }
+
+        /* Add hover effect on image */
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Align the footer at the bottom and set proper margins */
+        body {
+            margin: 0;
+            padding-bottom: 60px; /* To avoid content being hidden behind footer */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for all content -->
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Welcome to Marvel World</h1>
+            <p>Explore the Universe of Marvel Superheroes!</p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="content">
+            <h2>Marvel Superheroes</h2>
+            <p>Here is an image of Marvel superheroes:</p>
+            <img src="spider_man_4k_11.jpg" alt="Marvel Characters" width="400" height="300">
+            <img src="409229.jpg" alt="Marvel Characters" width="400" height="300">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Marvel Studios. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

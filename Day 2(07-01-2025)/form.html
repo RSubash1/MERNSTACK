@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Impressive form design</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: linear-gradiant(120,rgb(15, 230, 226));
+            color: black;
+            margin:0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+
+        }
+        .form{
+            background: grey;
+            backdrop-filter: blur(12px) ;
+            padding:28px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: fit-content;
+            box-shadow:0 8px 20px black;
+        }
+        .form.h1{
+            text-align: center;
+            margin: bottom 20 px;
+            font-size: 2.3 rem;
+        }
+        .form label{
+            display:block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color:white;
+        }
+        .form input[type="text"],
+        .form.input[type="email"],
+        .form.input[type="password"],
+        .form button{
+          width: 100%;
+          padding: 12px;
+          marging: botton 18px;
+          border: none;
+          font-size: 1rem;
+          transition: all 0.5s ease;
+        }
+        form.input[type="text"],
+        form.input[type="email"],
+        form.input[type="password"]{
+            background: rgb(187, 64, 20);
+            box-shadow:0 0 8 px;
+        }
+        form.input[type="text"],
+        form.input[type="email"],
+        form.input[type="password"]{
+            background:white;
+            box-shadow:0 0 8 px;
+        }  
+        .form button{
+            font-weight: yellow ;
+            color: black;
+            box-shadow: 0 4px 8px cornflowerblue;
+        }
+        .form button:hover{
+            background: orange;
+            box-shadow: 0 6px 16 px grey;
+            transform:translateY(-3px) ;
+        } 
+        .form p{
+            text-align: center;
+            font: size 0.7em;
+            color:blanchedalmond;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>sign up</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name " required>
+            <label fot="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your Email" required>
+            <label for="phone">Phone</label>
+            <input type="number" id="number" placeholder="Enter your phonenumber"required>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password"  placeholder="Enter your password">
+            <button type="submit"> Sign in</button>
+        </form>
+        <p> Already have an account?</p>
+        <p> <a href="">Login Here</a></p>
+    </div>
+</body>
+</html>

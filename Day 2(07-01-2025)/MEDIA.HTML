@@ -1,0 +1,100 @@
+<HTML>
+    <head>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                line-height: 1.5;
+                background: local;
+            }
+            header{
+                text-align: center;
+                padding:0%;
+                background:linear-gradient(130deg,rgb(142, 12, 12));
+                background-color: grey;
+                border-color: #fff;
+
+            }
+            header h1{
+                margin: bottom
+            }
+            header p{
+                font-size: 2rem;
+                margin-bottom :30px;
+            }
+            header .mda{
+                background: white;
+                color:black;
+                padding:12px 28 px;
+                text-decoration: none;
+                font-size:1.3rem;
+                border-radius:35px;
+                transition: transform 0.5s, box-shadow 0.5s;
+            }
+            header .mda :hover{
+                transform:translateY(-6px);
+                box-shadow:0 10px 20px darkolivegreen;
+            }
+            .grid-view{
+                display:grid;
+                grid-template-columns:repeat;
+                gap:20px;
+                padding: 50px 30px;
+                max-width:1150px;
+
+            }
+            .grid{
+                background:#f9d5f1;
+                border-radius: 18px;
+                padding: 18px;
+                text-align: center;
+                box-shadow: pink;
+                transition: 0 ;
+            }
+            .grid:hover{
+
+
+            }
+            .grid h2{
+                font-size: 1.7rem;
+                margin-bottom: 18px;
+                color:black;
+
+            }
+            .grid p{
+                font-size:1rem;
+                color:black;
+            }
+            footer{
+                text-align: center;
+                padding:20px;
+                background:darkblue;
+                color:white;
+                font-weight: bold;
+
+            }
+            @media(max-width:1150px){
+                .grid-view{
+                    grid-template-columns: repeat(2,0.8fr);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>landing page</h1>
+            <p>here we can experience the responsive design and modern aspects</p>
+            <a href="#" class="mda" >Just begin</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover the page</h2>
+                <p>Here it is inovative design which respnse the visuval</p>
+                <a href="#" class="mda" just begin></a>
+            </div>
+            
+
+        </section>
+    </body>
+    
+</HTML>
