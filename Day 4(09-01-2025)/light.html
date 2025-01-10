@@ -1,0 +1,29 @@
+<html >
+<head>
+    <title>Light Bulb Control</title>
+    <style>
+        .bulb {
+            width: 100px;
+            height: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Light Bulb Control</h1>
+    <img id="lightBulb" class="bulb" src="th.jpeg" alt="Light Bulb">
+    <br>
+    <button onclick="turnOnBulb()">Turn On</button>
+    <button onclick="turnOffBulb()">Turn Off</button>
+
+    <script>
+        function turnOnBulb() {
+            document.getElementById('lightBulb').src = 'light-bulb-on-off-png-11553940186lbyqngqg1y.png';
+        }
+
+        function turnOffBulb() {
+            document.getElementById('lightBulb').src = 'th.jpeg';
+        }
+    </script>
+</body>
+</html>
